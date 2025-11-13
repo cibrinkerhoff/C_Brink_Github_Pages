@@ -10,7 +10,7 @@ format:
 
 # Why Dive Into Crypto Data?
 
-If you’ve been anywhere near the financial world lately, you know crypto isn’t just a buzzword; it’s a full-blown phenomenon. From Bitcoin hitting jaw-dropping highs to meme coins making headlines, the crypto market is fast, unpredictable, and fascinating. It’s not like traditional stocks that sleep on weekends; this market runs 24/7, and every hour can bring a new twist. Interestingly, my brother recently bought some Dogecoin and has actually made a solid profit from it.
+If you have been anywhere near the financial world lately, you know crypto isn’t just a buzzword; it’s a full-blown phenomenon. From Bitcoin hitting jaw-dropping highs to meme coins making headlines, the crypto market is fast, unpredictable, and fascinating. It’s not like traditional stocks that sleep on weekends; this market runs 24/7, and every hour can bring a new twist. Interestingly, my brother recently bought some Dogecoin and has actually made a solid profit from it.
 
 So why analyze the top 200 cryptocurrencies? Simple: this is where the action is. These coins represent the biggest players in the game, with massive market caps, enormous trading volumes, and trends that ripple across the entire ecosystem. By digging into metrics like price changes, market cap, 24 hour change, 7 day change, and trading volume, we can uncover patterns that tell us who’s leading, who’s lagging, and where the next big move might come from.
 
