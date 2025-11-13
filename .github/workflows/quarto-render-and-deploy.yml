@@ -1,5 +1,8 @@
 name: Render Quarto site and commit
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ main ]
@@ -26,7 +29,21 @@ jobs:
       - name: Render site
         run: quarto render --no-cache
 
+      - name: Debug repo state
+        run: |
+          echo "--- repo status ---"
+          git status --porcelain
+          echo "--- remotes ---"
+          git remote -v
+          echo "--- files in repo root ---"
+          ls -la
+          echo "--- files in docs ---"
+          if [ -d docs ]; then ls -la docs || true; fi
+
       - name: Commit and push built site
+        env:
+          GIT_COMMITTER_NAME: "github-actions[bot]"
+          GIT_COMMITTER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
