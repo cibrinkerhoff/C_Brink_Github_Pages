@@ -26,8 +26,11 @@ Before scraping data from CoinMarketCap, I checked their terms of service to con
 Getting this dataset was easier than you might think. CoinMarketCap provides a public API that lets you pull cryptocurrency data without scraping individual pages. I used Python with the requests library to make a simple GET request to their API, asking for the top 200 coins sorted by market cap. Once the data came back in JSON format, I extracted key details like name, symbol, price, market cap, 24 hour and 7 day changes, and trading volume. From there, I built a Pandas DataFrame and saved it as a CSV file for analysis.
 
 If you want to try something similar, all you need is:
+
 - A public API endpoint (CoinMarketCap has one)
+
 - Python with requests and pandas
+
 - A few lines of code to fetch, clean, and save the data
 
 It’s a great way to start exploring real world financial data without diving into complex scraping or paid data sources.
@@ -39,8 +42,10 @@ The final dataset includes 200 cryptocurrencies with six key variables: Name, Pr
 When we looked at summary statistics, the numbers told an interesting story. Prices range from fractions of a cent (as low as $0.0000004) to over $102,000 for Bitcoin. Market caps span from about $162 million to more than $2 trillion, and 24 hour trading volumes vary from a few million to nearly $140 billion. The median price is just $0.58, showing how most coins are far below the giants like Bitcoin and Ethereum.
 
 Distributions were highly skewed, so log transformations helped reveal patterns. Market cap and volume both showed heavy right tails, dominated by a few massive players. Correlation analysis uncovered some fascinating relationships:
-• Price vs Circulating Supply had a strong negative correlation (-0.98), which makes sense since coins with huge supply tend to have lower prices. A linear regression confirmed this with an impressive R² of 0.83.
-• Market Cap vs Volume (24h) showed a positive correlation (0.67) and a decent regression fit (R² ≈ 0.60), meaning bigger coins generally see more trading activity.
+
+- Price vs Circulating Supply had a strong negative correlation (-0.98), which makes sense since coins with huge supply tend to have lower prices. A linear regression confirmed this with an impressive R² of 0.83.
+
+- Market Cap vs Volume (24h) showed a positive correlation (0.67) and a decent regression fit (R² ≈ 0.60), meaning bigger coins generally see more trading activity.
 
 The most surprising insight? The crypto world is extremely top heavy. A handful of coins dominate market cap and volume, while the majority trade at tiny prices with relatively small liquidity. These patterns highlight the volatility and inequality in the crypto ecosystem, offering plenty of room for deeper analysis.
 
