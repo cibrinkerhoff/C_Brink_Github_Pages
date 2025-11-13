@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="author" content="Corbin Brinkerhoff">
+<meta name="dcterms.date" content="2025-12-11">
 
-<title>Data Acquisition Project – Your Name - Data Science Portfolio</title>
+<title>Diving into Crypto Data: Analyzing the Top 200 Cryptocurrencies – Your Name - Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,14 +69,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b3aed8deb8408878d0e4e165d993d59e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -116,6 +117,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Your Name - Data Science Portfolio</span>
     </a>
@@ -127,7 +130,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -181,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/data-acquisition.html">Data Acquisition Project</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/data-acquisition.html">Diving into Crypto Data: Analyzing the Top 200 Cryptocurrencies</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -191,6 +194,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -208,7 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projects/data-acquisition.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Data Acquisition Project</span></a>
+ <span class="menu-text">Diving into Crypto Data: Analyzing the Top 200 Cryptocurrencies</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -222,15 +229,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-dive-into-crypto-data" id="toc-why-dive-into-crypto-data" class="nav-link active" data-scroll-target="#why-dive-into-crypto-data">Why Dive Into Crypto Data?</a>
+  <ul class="collapse">
+  <li><a href="#what-am-i-hoping-to-learn" id="toc-what-am-i-hoping-to-learn" class="nav-link" data-scroll-target="#what-am-i-hoping-to-learn">What Am I Hoping to Learn?</a></li>
+  <li><a href="#how-i-got-the-data-and-how-you-can-too" id="toc-how-i-got-the-data-and-how-you-can-too" class="nav-link" data-scroll-target="#how-i-got-the-data-and-how-you-can-too">How I Got the Data (And How You Can Too)</a></li>
+  <li><a href="#eda-highlights-what-did-we-find" id="toc-eda-highlights-what-did-we-find" class="nav-link" data-scroll-target="#eda-highlights-what-did-we-find">EDA Highlights: What Did We Find?</a></li>
+  <li><a href="#eda-at-a-glance" id="toc-eda-at-a-glance" class="nav-link" data-scroll-target="#eda-at-a-glance">EDA at a Glance</a>
+  <ul class="collapse">
+  <li><a href="#total-sample-size" id="toc-total-sample-size" class="nav-link" data-scroll-target="#total-sample-size">Total Sample Size:</a></li>
+  <li><a href="#counts-of-categorical-variables" id="toc-counts-of-categorical-variables" class="nav-link" data-scroll-target="#counts-of-categorical-variables">Counts of Categorical Variables:</a></li>
+  <li><a href="#summaries-of-numeric-variables" id="toc-summaries-of-numeric-variables" class="nav-link" data-scroll-target="#summaries-of-numeric-variables">Summaries of Numeric Variables:</a></li>
+  </ul></li>
+  <li><a href="#important-eda-visualizations" id="toc-important-eda-visualizations" class="nav-link" data-scroll-target="#important-eda-visualizations">Important EDA Visualizations</a></li>
+  <li><a href="#important-links" id="toc-important-links" class="nav-link" data-scroll-target="#important-links">Important Links</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Data Acquisition Project</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Diving into Crypto Data: Analyzing the Top 200 Cryptocurrencies</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -240,14 +266,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your Name </p>
+             <p>Corbin Brinkerhoff </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">December 11, 2025</p>
     </div>
   </div>
   
@@ -259,11 +285,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is coming down the pipeline. Check again later.</p>
+<section id="why-dive-into-crypto-data" class="level1">
+<h1>Why Dive Into Crypto Data?</h1>
+<p>If you’ve been anywhere near the financial world lately, you know crypto isn’t just a buzzword; it’s a full-blown phenomenon. From Bitcoin hitting jaw-dropping highs to meme coins making headlines, the crypto market is fast, unpredictable, and fascinating. It’s not like traditional stocks that sleep on weekends; this market runs 24/7, and every hour can bring a new twist. Interestingly, my brother recently bought some Dogecoin and has actually made a solid profit from it.</p>
+<p>So why analyze the top 200 cryptocurrencies? Simple: this is where the action is. These coins represent the biggest players in the game, with massive market caps, enormous trading volumes, and trends that ripple across the entire ecosystem. By digging into metrics like price changes, market cap, 24 hour change, 7 day change, and trading volume, we can uncover patterns that tell us who’s leading, who’s lagging, and where the next big move might come from.</p>
+<p>Whether you’re an investor looking for insights, a data enthusiast who loves spotting trends, or just curious about what drives this digital gold rush, this dataset is a goldmine. We’ll explore volatility, momentum, and adoption signals, all through the lens of real numbers. Think of it as decoding the heartbeat of the crypto world.</p>
+<section id="what-am-i-hoping-to-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-am-i-hoping-to-learn">What Am I Hoping to Learn?</h2>
+<p>When I look at this dataset, I’m curious about the relationships hiding in the numbers. Are there interesting correlations between variables like price, market cap, and trading volume? What do the extremes look like, who’s sitting at the top and bottom for each metric? I also want to dive into the shape of the data: how do these distributions look in their raw form, and what happens when we transform them? I’m hoping to explore whether any linear regressions between variables reveal intriguing patterns or unexpected insights.</p>
+<p>Before scraping data from CoinMarketCap, I checked their terms of service to confirm that accessing publicly available information for non commercial, educational purposes was allowed. I only collected data that was already visible on their site, with no hidden endpoints or private APIs, and I kept the requests minimal to avoid putting unnecessary load on their servers. In other words, I followed good scraping practices: no aggressive crawling, no bypassing restrictions, and no storing sensitive user data. The goal was simply to gather market stats that anyone could view on the site, and to do it in a way that respects the platform and its resources.</p>
+</section>
+<section id="how-i-got-the-data-and-how-you-can-too" class="level2">
+<h2 class="anchored" data-anchor-id="how-i-got-the-data-and-how-you-can-too">How I Got the Data (And How You Can Too)</h2>
+<p>Getting this dataset was easier than you might think. CoinMarketCap provides a public API that lets you pull cryptocurrency data without scraping individual pages. I used Python with the requests library to make a simple GET request to their API, asking for the top 200 coins sorted by market cap. Once the data came back in JSON format, I extracted key details like name, symbol, price, market cap, 24 hour and 7 day changes, and trading volume. From there, I built a Pandas DataFrame and saved it as a CSV file for analysis. If you want to try something similar, all you need is: • A public API endpoint (CoinMarketCap has one) • Python with requests and pandas • A few lines of code to fetch, clean, and save the data It’s a great way to start exploring real world financial data without diving into complex scraping or paid data sources.</p>
+</section>
+<section id="eda-highlights-what-did-we-find" class="level2">
+<h2 class="anchored" data-anchor-id="eda-highlights-what-did-we-find">EDA Highlights: What Did We Find?</h2>
+<p>The final dataset includes 200 cryptocurrencies with six key variables: Name, Price, 7 day Change (%), Market Cap, Volume (24h), and Circulating Supply. All columns are complete with no missing values, which made analysis straightforward. When we looked at summary statistics, the numbers told an interesting story. Prices range from fractions of a cent (as low as $0.0000004) to over $102,000 for Bitcoin. Market caps span from about $162 million to more than $2 trillion, and 24 hour trading volumes vary from a few million to nearly $140 billion. The median price is just $0.58, showing how most coins are far below the giants like Bitcoin and Ethereum. Distributions were highly skewed, so log transformations helped reveal patterns. Market cap and volume both showed heavy right tails, dominated by a few massive players. Correlation analysis uncovered some fascinating relationships: • Price vs Circulating Supply had a strong negative correlation (-0.98), which makes sense since coins with huge supply tend to have lower prices. A linear regression confirmed this with an impressive R² of 0.83. • Market Cap vs Volume (24h) showed a positive correlation (0.67) and a decent regression fit (R² ≈ 0.60), meaning bigger coins generally see more trading activity. The most surprising insight? The crypto world is extremely top heavy. A handful of coins dominate market cap and volume, while the majority trade at tiny prices with relatively small liquidity. These patterns highlight the volatility and inequality in the crypto ecosystem, offering plenty of room for deeper analysis.</p>
+</section>
+<section id="eda-at-a-glance" class="level2">
+<h2 class="anchored" data-anchor-id="eda-at-a-glance">EDA at a Glance</h2>
+<section id="total-sample-size" class="level3">
+<h3 class="anchored" data-anchor-id="total-sample-size">Total Sample Size:</h3>
+<p>The dataset contains 200 cryptocurrencies, each with six variables: Name, Price, 7-day Change (%), Market Cap, Volume (24h), and Circulating Supply.</p>
+</section>
+<section id="counts-of-categorical-variables" class="level3">
+<h3 class="anchored" data-anchor-id="counts-of-categorical-variables">Counts of Categorical Variables:</h3>
+<p>Name and Symbol are categorical, with 200 unique entries (one for each cryptocurrency). There are no missing values in any column.</p>
+</section>
+<section id="summaries-of-numeric-variables" class="level3">
+<h3 class="anchored" data-anchor-id="summaries-of-numeric-variables">Summaries of Numeric Variables:</h3>
+<section id="price" class="level4">
+<h4 class="anchored" data-anchor-id="price">Price:</h4>
+<p>Min: $0.0000004 Max: $102,971 Mean: $616.87 Median: $0.58 Highly skewed toward a few very high-priced coins like Bitcoin.</p>
+</section>
+<section id="market-cap" class="level4">
+<h4 class="anchored" data-anchor-id="market-cap">Market Cap:</h4>
+<p>Min: $161.86 million Max: $2.05 trillion Mean: $17.18 billion Median: $527.63 million Heavy right tail dominated by Bitcoin and Ethereum.</p>
+</section>
+<section id="volume-24h" class="level4">
+<h4 class="anchored" data-anchor-id="volume-24h">Volume (24h):</h4>
+<p>Min: $2.75 million Max: $139.76 billion Mean: $1.63 billion Median: $47.18 million.</p>
+</section>
+<section id="circulating-supply" class="level4">
+<h4 class="anchored" data-anchor-id="circulating-supply">Circulating Supply:</h4>
+<p>Min: 33,949 Max: 999,990,000,000,000 Mean: 16.5 trillion Median: 1.04 billion Extremely skewed due to tokens with massive supply.</p>
+</section>
+</section>
+</section>
+<section id="important-eda-visualizations" class="level2">
+<h2 class="anchored" data-anchor-id="important-eda-visualizations">Important EDA Visualizations</h2>
+<p><img src="images/PriceDistribution.png" class="img-fluid" alt="Price Distribution"> <em>Figure 1: Distribution of Cryptocurrency Prices (Log Scale)</em></p>
+<p><img src="images/MarketCapDistribution.png" class="img-fluid" alt="Market Cap Distribution"> <em>Figure 2: Distribution of Market Caps (Log Scale). Note right skewness.</em></p>
+<p><img src="images/LinearRegressCSvsP.png" class="img-fluid" alt="Price vs Circulating Supply"> <em>Figure 3: Linear regression of Price vs Circulating Supply</em></p>
+<p><img src="images/LinearRegressVolvsMC.png" class="img-fluid" alt="Volume vs Market Cap"> <em>Figure 4: Linear regression of 24h Volume vs Market Cap</em></p>
+</section>
+<section id="important-links" class="level2">
+<h2 class="anchored" data-anchor-id="important-links">Important Links</h2>
+<p><a href="https://coinmarketcap.com/">CoinMarketCap</a> - The source of the cryptocurrency data. <a href="https://github.com/cibrinkerhoff/Data_Acquisition_Blog_DATA/blob/main/cryptowebscrape.py">Webscraping CoinMarketCap with Python</a> <a href="https://github.com/cibrinkerhoff/Data_Acquisition_Blog_DATA">Repository for Data Acquisition Project</a></p>
 
 
 <!-- -->
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -317,13 +402,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -716,17 +802,112 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Acquisition Project"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Your Name"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-01-01"</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Diving into Crypto Data: Analyzing the Top 200 Cryptocurrencies"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Corbin Brinkerhoff"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-12-11"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This is coming down the pipeline. Check again later.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu"># Why Dive Into Crypto Data?</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>If you’ve been anywhere near the financial world lately, you know crypto isn’t just a buzzword; it’s a full-blown phenomenon. From Bitcoin hitting jaw-dropping highs to meme coins making headlines, the crypto market is fast, unpredictable, and fascinating. It’s not like traditional stocks that sleep on weekends; this market runs 24/7, and every hour can bring a new twist. Interestingly, my brother recently bought some Dogecoin and has actually made a solid profit from it.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>So why analyze the top 200 cryptocurrencies? Simple: this is where the action is. These coins represent the biggest players in the game, with massive market caps, enormous trading volumes, and trends that ripple across the entire ecosystem. By digging into metrics like price changes, market cap, 24 hour change, 7 day change, and trading volume, we can uncover patterns that tell us who’s leading, who’s lagging, and where the next big move might come from.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Whether you’re an investor looking for insights, a data enthusiast who loves spotting trends, or just curious about what drives this digital gold rush, this dataset is a goldmine. We’ll explore volatility, momentum, and adoption signals, all through the lens of real numbers. Think of it as decoding the heartbeat of the crypto world.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## What Am I Hoping to Learn?</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>When I look at this dataset, I’m curious about the relationships hiding in the numbers. Are there interesting correlations between variables like price, market cap, and trading volume? What do the extremes look like, who’s sitting at the top and bottom for each metric? I also want to dive into the shape of the data: how do these distributions look in their raw form, and what happens when we transform them? I’m hoping to explore whether any linear regressions between variables reveal intriguing patterns or unexpected insights.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>Before scraping data from CoinMarketCap, I checked their terms of service to confirm that accessing publicly available information for non commercial, educational purposes was allowed. I only collected data that was already visible on their site, with no hidden endpoints or private APIs, and I kept the requests minimal to avoid putting unnecessary load on their servers. In other words, I followed good scraping practices: no aggressive crawling, no bypassing restrictions, and no storing sensitive user data. The goal was simply to gather market stats that anyone could view on the site, and to do it in a way that respects the platform and its resources.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## How I Got the Data (And How You Can Too)</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Getting this dataset was easier than you might think. CoinMarketCap provides a public API that lets you pull cryptocurrency data without scraping individual pages. I used Python with the requests library to make a simple GET request to their API, asking for the top 200 coins sorted by market cap. Once the data came back in JSON format, I extracted key details like name, symbol, price, market cap, 24 hour and 7 day changes, and trading volume. From there, I built a Pandas DataFrame and saved it as a CSV file for analysis.</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>If you want to try something similar, all you need is:</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>• A public API endpoint (CoinMarketCap has one)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>• Python with requests and pandas</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>• A few lines of code to fetch, clean, and save the data</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>It’s a great way to start exploring real world financial data without diving into complex scraping or paid data sources.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## EDA Highlights: What Did We Find?</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>The final dataset includes 200 cryptocurrencies with six key variables: Name, Price, 7 day Change (%), Market Cap, Volume (24h), and Circulating Supply. All columns are complete with no missing values, which made analysis straightforward.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>When we looked at summary statistics, the numbers told an interesting story. Prices range from fractions of a cent (as low as $0.0000004) to over $102,000 for Bitcoin. Market caps span from about $162 million to more than $2 trillion, and 24 hour trading volumes vary from a few million to nearly $140 billion. The median price is just $0.58, showing how most coins are far below the giants like Bitcoin and Ethereum.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Distributions were highly skewed, so log transformations helped reveal patterns. Market cap and volume both showed heavy right tails, dominated by a few massive players. Correlation analysis uncovered some fascinating relationships:</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>• Price vs Circulating Supply had a strong negative correlation (-0.98), which makes sense since coins with huge supply tend to have lower prices. A linear regression confirmed this with an impressive R² of 0.83.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>• Market Cap vs Volume (24h) showed a positive correlation (0.67) and a decent regression fit (R² ≈ 0.60), meaning bigger coins generally see more trading activity.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>The most surprising insight? The crypto world is extremely top heavy. A handful of coins dominate market cap and volume, while the majority trade at tiny prices with relatively small liquidity. These patterns highlight the volatility and inequality in the crypto ecosystem, offering plenty of room for deeper analysis.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## EDA at a Glance</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">### Total Sample Size:</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>The dataset contains 200 cryptocurrencies, each with six variables: Name, Price, 7-day Change (%), Market Cap, Volume (24h), and Circulating Supply.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">### Counts of Categorical Variables:</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Name and Symbol are categorical, with 200 unique entries (one for each cryptocurrency).</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>There are no missing values in any column.</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">### Summaries of Numeric Variables:</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Price:</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>Min: $0.0000004</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Max: $102,971</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>Mean: $616.87</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Median: $0.58</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Highly skewed toward a few very high-priced coins like Bitcoin.</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Market Cap:</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Min: $161.86 million</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>Max: $2.05 trillion</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Mean: $17.18 billion</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>Median: $527.63 million</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Heavy right tail dominated by Bitcoin and Ethereum.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Volume (24h):</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Min: $2.75 million</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>Max: $139.76 billion</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>Mean: $1.63 billion</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>Median: $47.18 million.</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Circulating Supply:</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>Min: 33,949</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>Max: 999,990,000,000,000</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Mean: 16.5 trillion</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>Median: 1.04 billion</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>Extremely skewed due to tokens with massive supply.</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="fu">## Important EDA Visualizations</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="al">![Price Distribution](images/PriceDistribution.png)</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>*Figure 1: Distribution of Cryptocurrency Prices (Log Scale)*</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="al">![Market Cap Distribution](images/MarketCapDistribution.png)</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>*Figure 2: Distribution of Market Caps (Log Scale). Note right skewness.*</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="al">![Price vs Circulating Supply](images/LinearRegressCSvsP.png)</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>*Figure 3: Linear regression of Price vs Circulating Supply*</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="al">![Volume vs Market Cap](images/LinearRegressVolvsMC.png)</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>*Figure 4: Linear regression of 24h Volume vs Market Cap*</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## Important Links</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">CoinMarketCap</span><span class="co">](https://coinmarketcap.com/)</span> - The source of the cryptocurrency data.</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Webscraping CoinMarketCap with Python</span><span class="co">](https://github.com/cibrinkerhoff/Data_Acquisition_Blog_DATA/blob/main/cryptowebscrape.py)</span> </span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Repository for Data Acquisition Project</span><span class="co">](https://github.com/cibrinkerhoff/Data_Acquisition_Blog_DATA)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
